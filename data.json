@@ -1,0 +1,162 @@
+{
+ "actualizat": "2026-11-12T13:39:42+02:00",
+ "sursa": "Centrul de Dezvoltare SMART",
+ "apeluri": [
+  {
+   "id": "afir-dr12-zootehnic",
+   "program": "AFIR – PS PAC 2023-2027",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "DR-12 – Consolidarea exploatațiilor tinerilor fermieri instalați și a fermierilor de până la 45 de ani – componenta Sector zootehnic (84,8 mil. EUR)",
+   "beneficiari": "Șefi de exploatație de până la 40 de ani, foști beneficiari sM 6.1 (PNDR) și fermieri de până la 45 de ani",
+   "suma": "Până la 200.000 EUR/proiect; 80% (tineri până la 40 de ani) sau 65%",
+   "descriere": "Finanțează modernizarea exploatațiilor în care peste 50% din valoarea eligibilă vizează sectorul zootehnic: construcții și adăposturi noi sau modernizate, utilaje și echipamente noi, unități de condiționare și depozitare, procesare la nivel de fermă și comercializare ca componente secundare. Componenta „alte sectoare” s-a închis la 11.11.2026 prin epuizarea fondurilor.",
+   "termen": "2026-12-02",
+   "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-dr-12/"
+  },
+  {
+   "id": "afir-dr14-legumicultura",
+   "program": "AFIR – PS PAC 2023-2027",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "DR-14 – Investiții în fermele de mici dimensiuni – componenta Legumicultură (termen prelungit)",
+   "beneficiari": "Ferme mici cu dimensiune economică 4.000–11.999 EUR producție standard",
+   "suma": "Până la 50.000 EUR/proiect; max. 85%",
+   "descriere": "Finanțează investiții în fermele mici cu profil legumicol: sere și solarii cu sistem de irigații, construcții și modernizări de clădiri agricole, utilaje și echipamente noi specializate, irigații și energie regenerabilă pentru consum propriu ca componente secundare, precum și depozitare, procesare și vânzare a produselor proprii la nivel de fermă.",
+   "termen": "2026-11-16",
+   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
+  },
+  {
+   "id": "afir-dr14-zootehnic",
+   "program": "AFIR – PS PAC 2023-2027",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "DR-14 – Investiții în fermele de mici dimensiuni – componenta Sector zootehnic (termen prelungit)",
+   "beneficiari": "Ferme mici cu dimensiune economică 4.000–11.999 EUR producție standard",
+   "suma": "Până la 50.000 EUR/proiect; max. 85%",
+   "descriere": "Finanțează investiții în fermele mici cu profil majoritar zootehnic: construcția sau modernizarea adăposturilor și a clădirilor de fermă, împrejmuiri și drumuri de acces, facilități de gestionare a gunoiului de grajd, utilaje și echipamente noi specializate, soluții digitale, precum și procesarea și vânzarea produselor proprii ca activitate secundară.",
+   "termen": "2026-11-16",
+   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
+  },
+  {
+   "id": "afir-dr14-alte-sectoare",
+   "program": "AFIR – PS PAC 2023-2027",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "DR-14 – Investiții în fermele de mici dimensiuni – componenta Alte sectoare (termen prelungit)",
+   "beneficiari": "Ferme mici cu dimensiune economică 4.000–11.999 EUR producție standard",
+   "suma": "Până la 50.000 EUR/proiect; max. 85%",
+   "descriere": "Finanțează proiecte ale fermelor mici care nu se încadrează la legumicultură sau zootehnie, de exemplu înființarea ori reconversia livezilor și pepinierelor, culturi de cartof sau investiții mixte: construcții agricole, utilaje noi specializate, irigații și energie regenerabilă pentru consum propriu, depozitare, procesare și vânzare la poarta fermei.",
+   "termen": "2026-11-16",
+   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
+  },
+  {
+   "id": "afir-dr18-floricultura",
+   "program": "AFIR – PS PAC 2023-2027",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "DR-18 – Investiții în floricultură, plante medicinale și aromatice (5 mil. EUR, termen prelungit)",
+   "beneficiari": "Fermieri cultivatori de flori, plante medicinale și aromatice",
+   "suma": "Până la 100.000 EUR/proiect; până la 85%, în funcție de dimensiunea fermei",
+   "descriere": "Finanțează înființarea, extinderea și modernizarea exploatațiilor de flori, plante ornamentale, medicinale și aromatice, în câmp deschis sau în sere și solarii, utilaje și echipamente noi specializate, unități de condiționare și depozitare, agricultură de precizie, iar ca investiții secundare irigații, energie regenerabilă, procesare și vânzare la fermă.",
+   "termen": "2026-11-16",
+   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
+  },
+  {
+   "id": "apia-is-v-02",
+   "program": "APIA – Sector vitivinicol",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "IS-V-02 – Investiții în active corporale și necorporale în sectorul vitivinicol (9,35 mil. EUR, termen prelungit)",
+   "beneficiari": "Producători de vin: IMM-uri, întreprinderi sub 750 de angajați, PFA, ÎI, ÎF",
+   "suma": "Până la 1,5 mil. EUR/proiect; sesiunea se poate închide anticipat la 150% din plafon",
+   "descriere": "Finanțează investiții în active corporale și necorporale pentru modernizarea și dezvoltarea întreprinderilor vitivinicole care produc și procesează vin, în special echipamente și tehnologii care reduc consumul de energie, cresc eficiența energetică și introduc procese de producție moderne, digitalizate și sustenabile.",
+   "termen": "2026-11-30",
+   "url": "https://apia.org.ro/comunicat-de-presa/sesiunea-de-depunere-a-cererilor-de-finantare-pentru-investitiile-in-sectorul-vitivinicol-s-a-prelungit-pana-la-data-de-30-noiembrie-2026/"
+  },
+  {
+   "id": "apia-is-v-07",
+   "program": "APIA – Sector vitivinicol",
+   "domeniu": "Agricol",
+   "regiune": "Național",
+   "titlu": "IS-V-07 – Investiții pentru sporirea durabilității producției de vin (1,7 mil. EUR, termen prelungit)",
+   "beneficiari": "Producători de vin: IMM-uri, întreprinderi sub 750 de angajați, PFA, ÎI, ÎF",
+   "suma": "Conform ghidului APIA; sesiunea se poate închide anticipat la 150% din plafon",
+   "descriere": "Finanțează investiții în active corporale și necorporale care sporesc durabilitatea producției de vin: utilizarea și gestionarea eficientă a apei, conversia la producția ecologică, tehnici de producție integrată, echipamente pentru agricultură de precizie și digitalizare, conservarea solului și creșterea stocării carbonului în sol.",
+   "termen": "2026-11-30",
+   "url": "https://apia.org.ro/comunicat-de-presa/sesiunea-de-depunere-a-cererilor-de-finantare-pentru-investitiile-in-sectorul-vitivinicol-s-a-prelungit-pana-la-data-de-30-noiembrie-2026/"
+  },
+  {
+   "id": "afir-fm-producere-stocare-publici",
+   "program": "AFIR – Fondul pentru Modernizare",
+   "domeniu": "Nonagricol",
+   "regiune": "Național",
+   "titlu": "Energie solară cu stocare integrată pentru autoconsum – entități publice (500 mil. EUR)",
+   "beneficiari": "Entități publice: UAT-uri (inclusiv comune), instituții publice, ADI",
+   "suma": "Până la 100%; evaluare în ordinea depunerii, până la epuizarea alocării",
+   "descriere": "Finanțează capacități noi de producere a energiei electrice din surse solare, cu sisteme de stocare integrate, destinate autoconsumului entității publice. Sunt eligibile echipamentele și instalațiile noi, pompele de căldură, lucrările de construcții aferente, montajul și punerea în funcțiune, iar investiția trebuie să reducă costul energiei pentru serviciul public furnizat.",
+   "termen": "2026-11-20",
+   "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-producere-si-stocare-energie-regenerabila-beneficiari-publici/"
+  },
+  {
+   "id": "afir-fm-stocare-publici",
+   "program": "AFIR – Fondul pentru Modernizare",
+   "domeniu": "Nonagricol",
+   "regiune": "Național",
+   "titlu": "Capacități noi de stocare a energiei regenerabile – entități publice (150 mil. EUR)",
+   "beneficiari": "Entități publice: UAT-uri (inclusiv comune), instituții publice, ADI",
+   "suma": "Până la 100%; evaluare în ordinea depunerii, până la epuizarea alocării",
+   "descriere": "Finanțează instalații și echipamente noi de stocare a energiei electrice, amplasate în spatele contorului și racordate la o centrală regenerabilă existentă a entității publice, pentru consumul local al energiei produse. Durata de stocare trebuie să fie de 2–4 ore la puterea instalată a centralei, iar tehnologiile plumb-acid, NiCd și NiMH sunt excluse.",
+   "termen": "2026-11-20",
+   "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-stocare-energie-regenerabila-beneficiari-publici/"
+  },
+  {
+   "id": "leader-dr36-gal",
+   "program": "LEADER (DR-36)",
+   "domeniu": "Nonagricol",
+   "regiune": "Local – teritoriile GAL",
+   "titlu": "Apeluri de selecție lansate de Grupurile de Acțiune Locală: start-up și dezvoltare activități neagricole, ferme mici, infrastructură și servicii locale",
+   "beneficiari": "Microîntreprinderi și întreprinderi mici din rural, fermieri, comune, ONG-uri – conform strategiei fiecărui GAL",
+   "suma": "Până la 200.000 EUR/proiect; termene și alocări stabilite de fiecare GAL",
+   "descriere": "Prin apelurile GAL se finanțează proiecte prevăzute în strategia de dezvoltare locală: sprijin forfetar, pe bază de plan de afaceri, pentru înființarea sau diversificarea activităților neagricole, investiții neagricole, infrastructură locală, socială și de sănătate, precum și servicii de instruire, informare sau evenimente. Măsurile concrete diferă de la un GAL la altul.",
+   "termen": null,
+   "url": "https://gal.afir.ro/"
+  },
+  {
+   "id": "prsvo-turism-rural-statiuni",
+   "program": "Program Regional",
+   "domeniu": "Nonagricol",
+   "regiune": "Sud-Vest Oltenia",
+   "titlu": "Dezvoltarea turismului în mediul rural – apel dedicat stațiunilor turistice din mediul rural (aprox. 6 mil. EUR)",
+   "beneficiari": "Comune cu statut de stațiune turistică din Regiunea Sud-Vest Oltenia",
+   "suma": "Conform ghidului apelului",
+   "descriere": "Finanțează amenajarea și valorificarea obiectivelor turistice din comunele cu statut de stațiune turistică, infrastructura publică de agrement cu acces liber, alei pietonale, piste și trasee pentru biciclete, trotuare, spații verzi și mobilier urban, alături de promovarea turistică a obiectivului amenajat.",
+   "termen": "2026-11-27",
+   "url": "https://www.adroltenia.ro/finantare-prin-programul-regional-sud-vest-oltenia-pentru-statiunile-turistice-din-mediul-rural/"
+  },
+  {
+   "id": "prse-62-turism-non-urban",
+   "program": "Program Regional",
+   "domeniu": "Nonagricol",
+   "regiune": "Sud-Est",
+   "titlu": "Acțiunea 6.2 – Valorificarea potențialului turistic în zone non-urbane (PRSE/6/6.2/1/2025)",
+   "beneficiari": "UAT județe/comune, ADI, instituții publice, unități de cult din zona non-urbană Sud-Est",
+   "suma": "Conform ghidului apelului",
+   "descriere": "Finanțează îmbunătățirea infrastructurii turistice din zonele non-urbane cu potențial turistic valoros, dezvoltarea stațiunilor turistice, balneare și balneoclimaterice, precum și conservarea, restaurarea și valorificarea durabilă a patrimoniului cultural și istoric. Investițiile trebuie să fie neeconomice, iar utilizarea economică poate fi doar auxiliară.",
+   "termen": "2026-12-30",
+   "url": "https://regiosudest.ro/comunicare/anunturi-si-comunicate/prioritatea-6/corrigendum-nr-5-valorificarea-potentialului-turistic-in-zone-non-urbane"
+  },
+  {
+   "id": "ps-cabinete-scolare-rural-vest",
+   "program": "Programul Sănătate",
+   "domeniu": "Nonagricol",
+   "regiune": "Vest",
+   "titlu": "Modernizarea și dotarea cabinetelor medicale și stomatologice școlare din mediul rural și zonele ITI",
+   "beneficiari": "UAT-uri și unități de învățământ preuniversitar publice din mediul rural și din zonele ITI (Valea Jiului, Moții, Țara de Piatră)",
+   "suma": "Conform ghidului apelului",
+   "descriere": "Finanțează reabilitarea, modernizarea și dotarea cabinetelor de medicină școlară și stomatologice din unitățile de învățământ publice, inclusiv înființarea de cabinete în școlile care nu au, chiar și într-o clădire apropiată. Proiectele limitate doar la dotare nu sunt eligibile, iar consumabilele nu se finanțează, cu excepția celor pentru testarea echipamentelor.",
+   "termen": "2026-11-16",
+   "url": "https://adrvest.ro/finantari-europene-pentru-sanatatea-elevilor-investitii-in-cabinete-medicale-si-stomatologice-din-unitatile-de-invatamant-publice-prin-programul-sanatate/"
+  }
+ ]
+}

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finanțări rurale active | SMART</title>
+<meta name="description" content="Apeluri de finanțare deschise pentru mediul rural, agricol și nonagricol: AFIR (PS PAC 2023-2027, Fondul pentru Modernizare), APIA, LEADER/GAL, Programe Regionale și alte programe, cu termene, beneficiari eligibili, valori pe proiect și linkuri oficiale. Actualizat zilnic de Centrul de Dezvoltare SMART.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Questrial&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#042E61; --navy-2:#0F486E; --blue:#167BF3; --sky:#B1D2FB; --sky-2:#E8F1FE;
+    --ink:#1B2430; --muted:#5B6675; --line:#DCE3EC; --bg:#FFFFFF; --panel:#F6F8FB;
+    --urgent:#C62828; --warn:#B26A00; --ok:#1E7B4D; --radius:10px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font:15px/1.5 Lato,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1320px;margin:0 auto;padding:24px 16px 40px}
+  header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+  h1{font-family:Questrial,"Century Gothic",Lato,sans-serif;font-weight:400;color:var(--navy);font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.15;margin:0 0 6px}
+  .sub{color:var(--muted);font-size:.92rem;margin:0}
+  .updated{font-size:.82rem;color:var(--muted);white-space:nowrap}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 18px}
+  .stat{background:var(--sky-2);border-radius:var(--radius);padding:12px 14px}
+  .stat b{display:block;font-family:Questrial,Lato,sans-serif;font-weight:400;font-size:1.7rem;color:var(--navy);line-height:1.1}
+  .stat span{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+  .chip{border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:6px 13px;font:inherit;font-size:.85rem;cursor:pointer}
+  .chip:hover{border-color:var(--navy-2)}
+  .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+  .search{flex:1 1 220px;min-width:0;max-width:340px;margin-left:auto;border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;font:inherit;font-size:.88rem}
+  .search:focus{outline:2px solid var(--sky);border-color:var(--blue)}
+
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;min-width:1040px}
+  thead th{position:sticky;top:0;z-index:1;background:var(--navy);color:#fff;text-align:left;font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:0;white-space:nowrap}
+  thead th button{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:6px;width:100%;padding:11px 12px;cursor:pointer}
+  thead th button:hover{background:var(--navy-2)}
+  thead th button:focus-visible{outline:2px solid var(--sky);outline-offset:-2px}
+  thead th .arrow{opacity:.45;font-size:.8rem}
+  thead th[aria-sort="ascending"] .arrow,thead th[aria-sort="descending"] .arrow{opacity:1}
+  thead th.static{padding:11px 12px}
+  tbody td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top;font-size:.88rem}
+  tbody tr:not(.details):hover td{background:var(--panel)}
+  tbody tr.urgent td:first-child{box-shadow:inset 4px 0 0 var(--urgent)}
+  tbody tr.soon td:first-child{box-shadow:inset 4px 0 0 var(--warn)}
+  .tag{display:inline-block;border-radius:4px;padding:2px 8px;font-size:.7rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
+  .t-reg{background:#DBEAFE;color:#1E40AF}.t-peo{background:#DCFCE7;color:#166534}.t-pids{background:#FEF3C7;color:#854D0E}
+  .t-ptj{background:#D1FAE5;color:#065F46}.t-fm{background:#FFEDD5;color:#9A3412}.t-san{background:#FCE7F3;color:#9D174D}
+  .dom{margin-top:5px;font-size:.74rem;color:var(--muted)}
+  .c-reg{color:var(--muted);font-size:.82rem;min-width:110px}
+  .c-term{white-space:nowrap}
+  .c-term strong{display:block;font-weight:700}
+  .left-days{display:inline-block;margin-top:3px;border-radius:999px;padding:1px 8px;font-size:.72rem;font-weight:700;color:#fff;background:var(--ok)}
+  tr.urgent .left-days{background:var(--urgent)} tr.soon .left-days{background:var(--warn)}
+  .c-title{font-weight:700;min-width:240px;max-width:360px}
+  .c-ben{color:var(--ink);min-width:200px;max-width:300px}
+  .c-sum{min-width:150px;max-width:210px;font-variant-numeric:tabular-nums}
+  .c-act{white-space:nowrap}
+  .actions{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+  .btn{display:inline-flex;justify-content:center;align-items:center;gap:5px;border-radius:7px;padding:6px 10px;font:inherit;font-size:.8rem;font-weight:700;text-decoration:none;white-space:nowrap;cursor:pointer}
+  .btn-out{border:1.5px solid var(--line);color:var(--navy);background:#fff}
+  .btn-out:hover{border-color:var(--navy)}
+  .btn-main{border:1.5px solid var(--navy);background:var(--navy);color:#fff}
+  .btn-main:hover{background:var(--navy-2)}
+  .muted{color:var(--muted)}
+  .btn-more{border:0;background:none;color:var(--navy);padding:4px 2px 0;font-size:.8rem;font-weight:700;justify-content:flex-start}
+  .btn-more:hover{text-decoration:underline}
+  .btn-more .chev{display:inline-block;transition:transform .18s ease}
+  .btn-more[aria-expanded="true"] .chev{transform:rotate(90deg)}
+  tr.open td{background:var(--sky-2)}
+  tr.details td{border-top:0;background:var(--sky-2);padding:0 12px 14px}
+  tr.details .box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 24px;align-items:end;background:#fff;border:1px solid var(--sky);border-radius:8px;padding:12px 14px}
+  tr.details .lbl{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy-2);margin:0 0 4px}
+  tr.details p.desc{margin:0;font-size:.92rem;line-height:1.55;max-width:880px}
+  tr.details .meta2{font-size:.78rem;color:var(--muted);white-space:nowrap;text-align:right}
+  @media (max-width:640px){ tr.details .box{grid-template-columns:1fr} tr.details .meta2{text-align:left;white-space:normal} }
+  .empty,.err{padding:36px 16px;text-align:center;color:var(--muted)}
+  .note{margin-top:22px;padding:14px 16px;background:var(--panel);border-radius:var(--radius);font-size:.85rem;color:var(--muted)}
+  .note a{color:var(--navy);font-weight:700}
+  .hint{font-size:.78rem;color:var(--muted);margin:6px 2px 0}
+  @media (max-width:640px){ .search{max-width:none;margin-left:0} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Finanțări rurale active</h1>
+      <p class="sub">AFIR – PS PAC 2023-2027 · Fondul pentru Modernizare · APIA · LEADER/GAL · Programe Regionale · Programul Sănătate</p>
+    </div>
+    <div class="updated" id="updated">Se încarcă…</div>
+  </header>
+
+  <section class="stats" aria-label="Sumar">
+    <div class="stat"><b id="s-total">–</b><span>Apeluri deschise</span></div>
+    <div class="stat"><b id="s-urgent">–</b><span>Termen sub 30 de zile</span></div>
+    <div class="stat"><b id="s-prog">–</b><span>Programe</span></div>
+  </section>
+
+  <div class="controls" role="toolbar" aria-label="Filtre">
+    <div id="chips" style="display:contents"></div>
+    <input class="search" id="q" type="search" placeholder="Caută după titlu, regiune sau beneficiar…" aria-label="Caută">
+  </div>
+
+  <div class="table-wrap">
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th data-key="program" aria-sort="none"><button type="button">Program <span class="arrow">↕</span></button></th>
+          <th data-key="regiune" aria-sort="none"><button type="button">Regiune <span class="arrow">↕</span></button></th>
+          <th data-key="termen" aria-sort="none"><button type="button">Termen depunere <span class="arrow">↕</span></button></th>
+          <th data-key="titlu" aria-sort="none"><button type="button">Titlu apel <span class="arrow">↕</span></button></th>
+          <th data-key="beneficiari" aria-sort="none"><button type="button">Beneficiari eligibili <span class="arrow">↕</span></button></th>
+          <th data-key="suma" aria-sort="none"><button type="button">Valoare / proiect <span class="arrow">↕</span></button></th>
+          <th class="static">Detalii</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"><tr><td colspan="7" class="empty">Se încarcă lista…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="hint">Apasă pe titlul unei coloane pentru a sorta crescător / descrescător și pe „Detalii” pentru o scurtă descriere a apelului. Valorile pe proiect sunt orientative; verifică ghidul solicitantului.</p>
+
+  <p class="note">
+    Lista este verificată zilnic din surse oficiale (AFIR, APIA, MADR, ADR-uri), inclusiv prelungirile de termen. Sesiunile AFIR și APIA se pot închide înainte de termen, la epuizarea alocării.
+    Pentru fiecare apel, consultanții <strong>Centrului de Dezvoltare SMART</strong> pregătesc o fișă de sinteză și grila de evaluare.
+    Scrie-ne la <a href="mailto:office@smart.org.ro">office@smart.org.ro</a> și ți le trimitem.
+  </p>
+</div>
+
+<script>
+(function(){
+  var CONTACT = 'office@smart.org.ro';
+  var PROGRAMS = ['AFIR – PS PAC 2023-2027','AFIR – Fondul pentru Modernizare','APIA – Sector vitivinicol','LEADER (DR-36)','Program Regional','Programul Sănătate'];
+  var SHORT = {'AFIR – PS PAC 2023-2027':'AFIR – PS PAC','AFIR – Fondul pentru Modernizare':'AFIR – Fondul Modernizare','APIA – Sector vitivinicol':'APIA vitivinicol','LEADER (DR-36)':'LEADER / GAL','Program Regional':'Program Regional','Programul Sănătate':'Programul Sănătate'};
+  var TAG = {'AFIR – PS PAC 2023-2027':'t-ptj','AFIR – Fondul pentru Modernizare':'t-fm','APIA – Sector vitivinicol':'t-pids','LEADER (DR-36)':'t-peo','Program Regional':'t-reg','Programul Sănătate':'t-san'};
+  function programsInData(){ var seen={}, out=PROGRAMS.filter(function(p){ return state.rows.some(function(r){return r.program===p;}); });
+    state.rows.forEach(function(r){ if(out.indexOf(r.program)<0 && !seen[r.program]){ seen[r.program]=1; out.push(r.program); } }); return out; }
+  var state = {rows:[], prog:'Toate', q:'', sortKey:null, sortDir:1, open:{}};
+
+  function el(tag, cls, text){var e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e;}
+  function today(){var d=new Date(); d.setHours(0,0,0,0); return d;}
+  function daysLeft(t){return t ? Math.round((new Date(t+'T00:00:00') - today())/86400000) : null;}
+  function fmt(t){return new Date(t+'T00:00:00').toLocaleDateString('ro-RO',{day:'numeric',month:'short',year:'numeric'});}
+  function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+  function active(r){var d=daysLeft(r.termen); return d===null || d>=0;}
+  function rank(p){var i=PROGRAMS.indexOf(p); return i<0?PROGRAMS.length:i;}
+  // prima sumă din text (ex. "200.000 – 1.000.000 EUR" -> 200000); null dacă lipsește
+  function amount(s){
+    var m=(s||'').match(/\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?/);
+    if(!m) return null;
+    var n=parseFloat(m[0].replace(/\./g,'').replace(',','.'));
+    if(/mil/i.test((s||'').slice(m.index, m.index+m[0].length+6))) n*=1e6;
+    return n;
+  }
+  function byDefault(a,b){
+    var pa=rank(a.program), pb=rank(b.program); if(pa!==pb) return pa-pb;
+    return cmpDate(a,b);
+  }
+  function cmpDate(a,b){
+    if(!a.termen&&!b.termen)return 0; if(!a.termen)return 1; if(!b.termen)return -1;
+    return a.termen<b.termen?-1:a.termen>b.termen?1:0;
+  }
+  function cmp(key){
+    return function(a,b){
+      var r;
+      if(key==='program') r=rank(a.program)-rank(b.program);
+      else if(key==='termen') r=cmpDate(a,b);
+      else if(key==='suma'){
+        var x=amount(a.suma), y=amount(b.suma);
+        if(x===null&&y===null) r=0; else if(x===null) return 1; else if(y===null) return -1; else r=x-y;
+      } else r=(a[key]||'').localeCompare(b[key]||'','ro',{sensitivity:'base'});
+      return r*state.sortDir || byDefault(a,b);
+    };
+  }
+
+  function mailto(r){
+    var subj='Solicitare fișă apel: '+r.titlu;
+    var body='Bună ziua,\n\nVă rog să-mi trimiteți fișa de sinteză și grila de evaluare pentru apelul:\n'+
+      r.titlu+' ('+r.program+(r.regiune?', '+r.regiune:'')+')\n'+r.url+'\n\nNume:\nOrganizație:\nTelefon:\n\nMulțumesc!';
+    return 'mailto:'+CONTACT+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+  }
+
+  function renderChips(){
+    var box=document.getElementById('chips'); box.textContent='';
+    ['Toate'].concat(programsInData()).forEach(function(p){
+      var b=el('button','chip',SHORT[p]||p); b.type='button';
+      b.setAttribute('aria-pressed',String(state.prog===p));
+      b.addEventListener('click',function(){state.prog=p; renderChips(); renderTable();});
+      box.appendChild(b);
+    });
+  }
+
+  function renderHeader(){
+    document.querySelectorAll('#tbl thead th[data-key]').forEach(function(th){
+      var k=th.getAttribute('data-key'), on=(k===state.sortKey);
+      th.setAttribute('aria-sort', on ? (state.sortDir>0?'ascending':'descending') : 'none');
+      th.querySelector('.arrow').textContent = on ? (state.sortDir>0?'↑':'↓') : '↕';
+    });
+  }
+
+  function renderTable(){
+    var tb=document.getElementById('tbody'); tb.textContent='';
+    var q=norm(state.q);
+    var rows=state.rows.filter(active).filter(function(r){
+      return (state.prog==='Toate'||r.program===state.prog) &&
+        (!q || norm([r.titlu,r.regiune,r.program,r.domeniu,r.beneficiari,r.suma,r.descriere].join(' ')).indexOf(q)>=0);
+    }).sort(state.sortKey ? cmp(state.sortKey) : byDefault);
+    if(!rows.length){ var tr=el('tr'), td=el('td','empty','Niciun apel deschis pentru selecția curentă.'); td.colSpan=7; tr.appendChild(td); tb.appendChild(tr); return; }
+    rows.forEach(function(r){
+      var d=daysLeft(r.termen);
+      var tr=el('tr', d!==null&&d<=7?'urgent':d!==null&&d<=30?'soon':'');
+      var c1=el('td'); c1.appendChild(el('span','tag '+(TAG[r.program]||'t-reg'),SHORT[r.program]||r.program));
+      if(r.domeniu) c1.appendChild(el('div','dom',r.domeniu)); tr.appendChild(c1);
+      tr.appendChild(el('td','c-reg',r.regiune||'—'));
+      var c3=el('td','c-term');
+      if(r.termen){ c3.appendChild(el('strong',null,fmt(r.termen))); c3.appendChild(el('span','left-days', d===0?'Astăzi':d===1?'Mâine':d+' zile')); }
+      else c3.appendChild(el('span','muted','vezi ghidul'));
+      tr.appendChild(c3);
+      var ct=el('td','c-title'); ct.appendChild(el('div',null,r.titlu));
+      var more=null;
+      if(r.descriere){
+        more=el('button','btn btn-more'); more.type='button';
+        more.setAttribute('aria-expanded', String(!!state.open[r.id]));
+        more.appendChild(el('span','chev','›')); more.appendChild(document.createTextNode(' Detalii'));
+        ct.appendChild(more);
+      }
+      tr.appendChild(ct);
+      tr.appendChild(el('td','c-ben',r.beneficiari||'—'));
+      tr.appendChild(el('td','c-sum',r.suma||'—'));
+      var c7=el('td','c-act'), act=el('div','actions');
+      var a1=el('a','btn btn-out','Apel oficial ↗'); a1.href=r.url; a1.target='_blank'; a1.rel='noopener';
+      var a2=el('a','btn btn-main','Cere fișa'); a2.href=mailto(r); a2.target='_top';
+      act.appendChild(a1); act.appendChild(a2); c7.appendChild(act); tr.appendChild(c7);
+      tb.appendChild(tr);
+      if(more){
+        var dr=el('tr','details'); var dtd=el('td'); dtd.colSpan=7;
+        var box=el('div','box'), txt=el('div');
+        txt.appendChild(el('p','lbl','Ce se poate finanța'));
+        txt.appendChild(el('p','desc',r.descriere));
+        box.appendChild(txt);
+        box.appendChild(el('div','meta2','Detalii complete în ghidul solicitantului · fișa SMART la cerere'));
+        dtd.appendChild(box); dr.appendChild(dtd);
+        var id='det-'+r.id; dr.id=id; more.setAttribute('aria-controls',id);
+        var setOpen=function(o){ state.open[r.id]=o; dr.hidden=!o; tr.classList.toggle('open',o); more.setAttribute('aria-expanded',String(o)); };
+        setOpen(!!state.open[r.id]);
+        more.addEventListener('click',function(){ setOpen(!state.open[r.id]); });
+        tb.appendChild(dr);
+      }
+    });
+  }
+
+  function renderStats(meta){
+    var act=state.rows.filter(active);
+    document.getElementById('s-total').textContent=act.length;
+    document.getElementById('s-urgent').textContent=act.filter(function(r){var d=daysLeft(r.termen);return d!==null&&d<=30;}).length;
+    document.getElementById('s-prog').textContent=new Set(act.map(function(r){return r.program;})).size;
+    var at=meta&&meta.actualizat?new Date(meta.actualizat):null;
+    document.getElementById('updated').textContent = at&&!isNaN(at) ? 'Actualizat: '+at.toLocaleDateString('ro-RO',{day:'numeric',month:'long',year:'numeric'}) : '';
+  }
+
+  document.querySelectorAll('#tbl thead th[data-key] button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.parentNode.getAttribute('data-key');
+      if(state.sortKey===k) state.sortDir=-state.sortDir; else {state.sortKey=k; state.sortDir=1;}
+      renderHeader(); renderTable();
+    });
+  });
+  document.getElementById('q').addEventListener('input',function(e){state.q=e.target.value; renderTable();});
+
+  fetch('data.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status); return r.json();})
+    .then(function(data){
+      var rows=Array.isArray(data)?data:(data.apeluri||[]);
+      state.rows=rows.filter(function(r){return r&&r.titlu&&r.url;});
+      renderChips(); renderHeader(); renderStats(Array.isArray(data)?null:data); renderTable();
+    })
+    .catch(function(){
+      document.getElementById('updated').textContent='';
+      var tb=document.getElementById('tbody'); tb.textContent='';
+      var tr=el('tr'), td=el('td','err','Lista nu a putut fi încărcată acum. Reîncercați peste câteva minute.'); td.colSpan=7; tr.appendChild(td); tb.appendChild(tr);
+    });
+
+  // Ajustează automat înălțimea când pagina e afișată într-un iframe pe smart.org.ro
+  function postHeight(){ try{ parent.postMessage({type:'smart-finantari-rurale-height', height:document.documentElement.scrollHeight}, '*'); }catch(e){} }
+  if (window.parent!==window){ new ResizeObserver(postHeight).observe(document.body); window.addEventListener('load',postHeight); }
+})();
+</script>
+</body>
+</html>
