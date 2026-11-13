@@ -75,11 +75,9 @@
   .btn-more[aria-expanded="true"] .chev{background:#fff;color:var(--navy);transform:rotate(180deg)}
   tr.open td{background:var(--sky-2)}
   tr.details td{border-top:0;background:var(--sky-2);padding:0 12px 14px}
-  tr.details .box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 24px;align-items:end;background:#fff;border:1px solid var(--sky);border-radius:8px;padding:12px 14px}
+  tr.details .box{background:#fff;border:1px solid var(--sky);border-radius:8px;padding:12px 14px}
   tr.details .lbl{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy-2);margin:0 0 4px}
   tr.details p.desc{margin:0;font-size:.92rem;line-height:1.55;max-width:880px}
-  tr.details .meta2{font-size:.78rem;color:var(--muted);white-space:nowrap;text-align:right}
-  @media (max-width:640px){ tr.details .box{grid-template-columns:1fr} tr.details .meta2{text-align:left;white-space:normal} }
   .empty,.err{padding:36px 16px;text-align:center;color:var(--muted)}
   .note{margin-top:22px;padding:14px 16px;background:var(--panel);border-radius:var(--radius);font-size:.85rem;color:var(--muted)}
   .note a{color:var(--navy);font-weight:700}
@@ -244,7 +242,6 @@
         txt.appendChild(el('p','lbl','Ce se poate finanța'));
         txt.appendChild(el('p','desc',r.descriere));
         box.appendChild(txt);
-        box.appendChild(el('div','meta2','Detalii complete în ghidul solicitantului · fișa SMART la cerere'));
         dtd.appendChild(box); dr.appendChild(dtd);
         var id='det-'+r.id; dr.id=id; more.setAttribute('aria-controls',id);
         var setOpen=function(o){ state.open[r.id]=o; dr.hidden=!o; tr.classList.toggle('open',o); more.setAttribute('aria-expanded',String(o)); moreLbl.textContent=o?'Ascunde detaliile':'Detalii'; };
