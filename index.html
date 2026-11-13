@@ -66,10 +66,13 @@
   .btn-main{border:1.5px solid var(--navy);background:var(--navy);color:#fff}
   .btn-main:hover{background:var(--navy-2)}
   .muted{color:var(--muted)}
-  .btn-more{border:0;background:none;color:var(--navy);padding:4px 2px 0;font-size:.8rem;font-weight:700;justify-content:flex-start}
-  .btn-more:hover{text-decoration:underline}
-  .btn-more .chev{display:inline-block;transition:transform .18s ease}
-  .btn-more[aria-expanded="true"] .chev{transform:rotate(90deg)}
+  .btn-more{margin-top:9px;padding:5px 12px 5px 10px;border:1.5px solid var(--blue);background:var(--sky-2);color:var(--navy);border-radius:999px;font-size:.8rem;font-weight:700;gap:6px;box-shadow:0 1px 2px rgba(4,46,97,.08);transition:background .15s ease,color .15s ease,border-color .15s ease}
+  .btn-more:hover{background:var(--sky);border-color:var(--navy)}
+  .btn-more:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+  .btn-more .chev{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;background:var(--navy);color:#fff;font-size:.72rem;line-height:1;transition:transform .18s ease}
+  .btn-more[aria-expanded="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+  .btn-more[aria-expanded="true"]:hover{background:var(--navy-2);border-color:var(--navy-2)}
+  .btn-more[aria-expanded="true"] .chev{background:#fff;color:var(--navy);transform:rotate(180deg)}
   tr.open td{background:var(--sky-2)}
   tr.details td{border-top:0;background:var(--sky-2);padding:0 12px 14px}
   tr.details .box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 24px;align-items:end;background:#fff;border:1px solid var(--sky);border-radius:8px;padding:12px 14px}
@@ -224,7 +227,7 @@
       if(r.descriere){
         more=el('button','btn btn-more'); more.type='button';
         more.setAttribute('aria-expanded', String(!!state.open[r.id]));
-        more.appendChild(el('span','chev','›')); more.appendChild(document.createTextNode(' Detalii'));
+        more.appendChild(el('span','chev','▾')); var moreLbl=el('span',null,'Detalii'); more.appendChild(moreLbl);
         ct.appendChild(more);
       }
       tr.appendChild(ct);
@@ -244,7 +247,7 @@
         box.appendChild(el('div','meta2','Detalii complete în ghidul solicitantului · fișa SMART la cerere'));
         dtd.appendChild(box); dr.appendChild(dtd);
         var id='det-'+r.id; dr.id=id; more.setAttribute('aria-controls',id);
-        var setOpen=function(o){ state.open[r.id]=o; dr.hidden=!o; tr.classList.toggle('open',o); more.setAttribute('aria-expanded',String(o)); };
+        var setOpen=function(o){ state.open[r.id]=o; dr.hidden=!o; tr.classList.toggle('open',o); more.setAttribute('aria-expanded',String(o)); moreLbl.textContent=o?'Ascunde detaliile':'Detalii'; };
         setOpen(!!state.open[r.id]);
         more.addEventListener('click',function(){ setOpen(!state.open[r.id]); });
         tb.appendChild(dr);
