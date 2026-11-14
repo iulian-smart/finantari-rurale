@@ -55,6 +55,7 @@
   .c-term strong{display:block;font-weight:700}
   .left-days{display:inline-block;margin-top:3px;border-radius:999px;padding:1px 8px;font-size:.72rem;font-weight:700;color:#fff;background:var(--ok)}
   tr.urgent .left-days{background:var(--urgent)} tr.soon .left-days{background:var(--warn)}
+  tr.expired .left-days{background:var(--muted)} tbody tr.expired > td{opacity:.6}
   .c-title{font-weight:700;min-width:240px;max-width:360px}
   .c-ben{color:var(--ink);min-width:200px;max-width:300px}
   .c-sum{min-width:150px;max-width:210px;font-variant-numeric:tabular-nums}
@@ -147,6 +148,7 @@
   function fmt(t){return new Date(t+'T00:00:00').toLocaleDateString('ro-RO',{day:'numeric',month:'short',year:'numeric'});}
   function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
   function active(r){var d=daysLeft(r.termen); return d===null || d>=0;}
+  function visible(r){var d=daysLeft(r.termen); return d===null || d>=-10;}
   function rank(p){var i=PROGRAMS.indexOf(p); return i<0?PROGRAMS.length:i;}
   // prima sumă din text (ex. "200.000 – 1.000.000 EUR" -> 200000); null dacă lipsește
   function amount(s){
@@ -205,19 +207,19 @@
   function renderTable(){
     var tb=document.getElementById('tbody'); tb.textContent='';
     var q=norm(state.q);
-    var rows=state.rows.filter(active).filter(function(r){
+    var rows=state.rows.filter(visible).filter(function(r){
       return (state.prog==='Toate'||r.program===state.prog) &&
         (!q || norm([r.titlu,r.regiune,r.program,r.domeniu,r.beneficiari,r.suma,r.descriere].join(' ')).indexOf(q)>=0);
-    }).sort(state.sortKey ? cmp(state.sortKey) : byDefault);
+    }).sort(function(a,b){ var ea=active(a)?0:1, eb=active(b)?0:1; if(ea!==eb) return ea-eb; return (state.sortKey ? cmp(state.sortKey) : byDefault)(a,b); });
     if(!rows.length){ var tr=el('tr'), td=el('td','empty','Niciun apel deschis pentru selecția curentă.'); td.colSpan=7; tr.appendChild(td); tb.appendChild(tr); return; }
     rows.forEach(function(r){
       var d=daysLeft(r.termen);
-      var tr=el('tr', d!==null&&d<=7?'urgent':d!==null&&d<=30?'soon':'');
+      var tr=el('tr', d!==null&&d<0?'expired':d!==null&&d<=7?'urgent':d!==null&&d<=30?'soon':'');
       var c1=el('td'); c1.appendChild(el('span','tag '+(TAG[r.program]||'t-reg'),SHORT[r.program]||r.program));
       if(r.domeniu) c1.appendChild(el('div','dom',r.domeniu)); tr.appendChild(c1);
       tr.appendChild(el('td','c-reg',r.regiune||'—'));
       var c3=el('td','c-term');
-      if(r.termen){ c3.appendChild(el('strong',null,fmt(r.termen))); c3.appendChild(el('span','left-days', d===0?'Astăzi':d===1?'Mâine':d+' zile')); }
+      if(r.termen){ c3.appendChild(el('strong',null,fmt(r.termen))); c3.appendChild(el('span','left-days', d<0?'Expirat':d===0?'Astăzi':d===1?'Mâine':d+' zile')); }
       else c3.appendChild(el('span','muted','vezi ghidul'));
       tr.appendChild(c3);
       var ct=el('td','c-title'); ct.appendChild(el('div',null,r.titlu));
