@@ -1,5 +1,5 @@
 {
- "actualizat": "2026-11-18T10:42:28+02:00",
+ "actualizat": "2026-11-19T10:42:41+02:00",
  "sursa": "Centrul de Dezvoltare SMART",
  "apeluri": [
   {
@@ -13,54 +13,6 @@
    "descriere": "Componenta Sector zootehnic a intervenției DR-12 finanțează proiectele în care peste 50% din valoarea eligibilă vizează ferma zootehnică: construcții noi sau modernizate cu dotări și utilități, utilaje pentru producerea și distribuirea furajelor, unități de condiționare și depozitare, iar ca componente secundare procesarea la fermă, comercializarea, irigațiile și energia regenerabilă pentru consum propriu. Pot aplica fermierii instalați, nu persoane fizice, de cel mult 45 de ani sau care au finalizat planul de afaceri sM 6.1, șefi de exploatație cu minimum 8 clase și competențe agricole, cu o fermă de minimum 12.000 euro SO. Nu se finanțează animale, terenuri, clădiri, cap tractor, ATV sau locuința. Sprijinul ajunge la 200.000 euro pe proiect, cu intensitate de 80% pentru tinerii fermieri de până la 40 de ani și 65% pentru ceilalți. Punctajul minim este de 45 de puncte, criteriile vizând calificarea, cooperativele, proprietatea, agricultura de precizie și managementul riscului. Alocarea este de circa 84,8 milioane euro, iar componenta Alte sectoare s-a închis pe 11.11.2026 prin epuizarea fondurilor.",
    "termen": "2026-12-02",
    "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-dr-12/"
-  },
-  {
-   "id": "afir-dr14-legumicultura",
-   "program": "AFIR – PS PAC 2023-2027",
-   "domeniu": "Agricol",
-   "regiune": "Național",
-   "titlu": "DR-14 – Investiții în fermele de mici dimensiuni – componenta Legumicultură (termen prelungit)",
-   "beneficiari": "Ferme mici cu dimensiune economică 2.300–11.999 EUR producție standard",
-   "suma": "Până la 50.000 EUR/proiect; max. 85%",
-   "descriere": "Componenta Legumicultură a intervenției DR-14 se adresează fermelor mici cu SO majoritar din legumicultură, între 2.300 și 11.999 euro SO, iar proiectul trebuie să includă investiții în acest sector. Se pot finanța sere și solarii noi sau modernizate (structură metalică sau PVC armat, folie UV de minimum 4 ani, irigații obligatorii la înființare), utilaje noi, depozitare, condiționare, procesare la fermă sub 50% din valoarea eligibilă și comercializarea propriilor produse, iar irigațiile și energia regenerabilă doar ca componentă secundară. Pot aplica fermierii autorizați, nu persoanele fizice; nu sunt eligibile terenurile, clădirile, cap tractorul sau bunurile second-hand. Sprijinul este de maximum 50.000 euro pe proiect, cu intensitate de până la 85%. Pragul minim este de 40 de puncte, punctând spațiile protejate (până la 30 p), vechimea în agricultură de peste 5 ani (până la 30 p), cooperativele, terenul în proprietate și calificarea. Termenul a fost prelungit până la 16.11.2026, ora 16:00, iar componenta Achiziții simple s-a închis pe 6.10.2026 prin epuizarea fondurilor.",
-   "termen": "2026-11-16",
-   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
-  },
-  {
-   "id": "afir-dr14-zootehnic",
-   "program": "AFIR – PS PAC 2023-2027",
-   "domeniu": "Agricol",
-   "regiune": "Național",
-   "titlu": "DR-14 – Investiții în fermele de mici dimensiuni – componenta Sector zootehnic (termen prelungit)",
-   "beneficiari": "Ferme mici cu 4.000–11.999 EUR producție standard (2.000 EUR pentru rase autohtone)",
-   "suma": "Până la 50.000 EUR/proiect; max. 85%",
-   "descriere": "Componenta Sectorul zootehnic a intervenției DR-14 vizează fermele mici cu SO majoritar din zootehnie, între 4.000 și 11.999 euro SO, respectiv între 2.000 și 11.999 euro SO pentru fermele cu rase autohtone, iar proiectul trebuie să includă investiții în acest sector. Se pot finanța construcții agricole noi sau modernizate, gestionarea gunoiului de grajd, mașini și echipamente noi, baza furajeră, depozitare, condiționare, procesare la fermă sub 50% din valoarea eligibilă și comercializarea propriilor produse. Pot aplica fermierii autorizați, nu persoanele fizice; nu sunt eligibile animalele, terenurile, clădirile, cap tractorul sau bunurile second-hand. Sprijinul este de maximum 50.000 euro pe proiect, cu intensitate de până la 85%. Pragul minim este de 40 de puncte, criteriile punctând zona montană (15 p), rasele autohtone (până la 20 p), vechimea în agricultură de peste 5 ani (până la 20 p), cooperativele, terenul în proprietate și calificarea. Termenul a fost prelungit până la 16.11.2026, ora 16:00, iar componenta Achiziții simple s-a închis pe 6.10.2026 prin epuizarea fondurilor.",
-   "termen": "2026-11-16",
-   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
-  },
-  {
-   "id": "afir-dr14-alte-sectoare",
-   "program": "AFIR – PS PAC 2023-2027",
-   "domeniu": "Agricol",
-   "regiune": "Național",
-   "titlu": "DR-14 – Investiții în fermele de mici dimensiuni – componenta Alte sectoare (termen prelungit)",
-   "beneficiari": "Ferme mici cu dimensiune economică 4.000–11.999 EUR producție standard",
-   "suma": "Până la 50.000 EUR/proiect; max. 85%",
-   "descriere": "Componenta Alte sectoare a intervenției DR-14 preia proiectele fermelor mici care nu se încadrează la legumicultură, zootehnie sau achiziții simple, de exemplu plantații de zmeur, cultura cartofului sau ferme mixte care investesc în alt sector decât cel cu SO majoritar. Ferma trebuie să aibă între 4.000 și 11.999 euro SO, iar investițiile sunt eligibile doar în sectoarele în care solicitantul are SO. Se pot finanța construcții agricole, plantații pomicole cu material certificat, mașini și echipamente noi, depozitare, condiționare, procesare la fermă sub 50% din valoarea eligibilă și comercializarea propriilor produse. Nu sunt eligibile terenurile, clădirile, cap tractorul sau bunurile second-hand, iar persoanele fizice nu pot aplica. Sprijinul este de maximum 50.000 euro pe proiect, cu intensitate de până la 85%. Pragul minim este de 40 de puncte, cu accent pe vechimea în agricultură de peste 5 ani (până la 35 p), terenul în proprietate (25 p), zona montană, cooperativele și calificarea. Termenul a fost prelungit până la 16.11.2026, ora 16:00, iar componenta Achiziții simple s-a închis pe 6.10.2026 prin epuizarea fondurilor.",
-   "termen": "2026-11-16",
-   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
-  },
-  {
-   "id": "afir-dr18-floricultura",
-   "program": "AFIR – PS PAC 2023-2027",
-   "domeniu": "Agricol",
-   "regiune": "Național",
-   "titlu": "DR-18 – Investiții în floricultură, plante medicinale și aromatice (5 mil. EUR, termen prelungit)",
-   "beneficiari": "Fermieri cultivatori de flori, plante medicinale și aromatice",
-   "suma": "Până la 100.000 EUR/proiect; până la 85%, în funcție de dimensiunea fermei",
-   "descriere": "Intervenția DR-18 finanțează înființarea, extinderea și modernizarea fermelor de flori, plante ornamentale, medicinale și aromatice, în câmp sau în spații protejate, utilaje specifice noi, unități de condiționare și depozitare și agricultura de precizie, iar ca componente secundare procesarea la fermă, comercializarea, irigațiile și energia regenerabilă. Pot aplica fermierii constituiți juridic (nu persoanele fizice), cooperativele și grupurile sau organizațiile de producători recunoscute, cu o exploatație de minimum 2.000 euro SO. Cine a depus pe DR-14 pentru aceste sub-sectoare nu poate depune și pe DR-18. Nu se finanțează terenuri, clădiri, cap tractor, UTV sau bunuri second-hand. Sprijinul este de maximum 100.000 euro pe proiect, cu intensitate de 85% pentru fermele între 2.000 și 11.999 euro SO și de 65% de la 12.000 euro SO. Pragul minim este de 40 de puncte, punctând cultura ecologică, spațiile protejate, tehnologiile cu impact redus asupra mediului și formele asociative. Bugetul este de 5 milioane euro, cu cereri de circa 2,54 milioane la 30 octombrie, iar termenul a fost prelungit până la 16.11.2026, ora 16:00.",
-   "termen": "2026-11-16",
-   "url": "https://www.afir.ro/info-la-zi/prelungire-sesiune-depunere-proiecte-de-investitii-aferente-dr-14-si-dr-18/"
   },
   {
    "id": "apia-is-v-02",
