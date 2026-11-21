@@ -1,5 +1,5 @@
 {
- "actualizat": "2026-11-20T10:42:30+02:00",
+ "actualizat": "2026-11-21T10:42:12+02:00",
  "sursa": "Centrul de Dezvoltare SMART",
  "apeluri": [
   {
@@ -37,30 +37,6 @@
    "descriere": "Intervenția IS-V-07 din Planul Strategic PAC 2023-2027 finanțează investiții în active corporale și necorporale care sporesc durabilitatea producției de vin. Investițiile vizează gestionarea mai bună a apei, conversia la producția ecologică, tehnicile de producție integrată, echipamentele pentru agricultura de precizie sau digitalizată și conservarea solului cu captarea carbonului. Sunt eligibile, de exemplu, irigațiile la nivelul exploatației prin picurare cu consum redus, reutilizarea apei, senzorii și software-ul aferent. Pot aplica IMM-uri și întreprinderi cu sub 750 de angajați sau cifră de afaceri sub 200 de milioane de euro, producători viticoli cu plantații înscrise în Registrul plantațiilor viticole. Sprijinul maxim este de 650.000 de euro pentru achizițiile complexe și de 250.000 de euro pentru cele simple, cu 30%, respectiv 70% din alocarea de 1,7 milioane de euro. Cererile se depun electronic la APIA până la 30 noiembrie 2026, iar sesiunea se poate închide anticipat dacă cererile ating 150% din plafon. Intensitatea sprijinului și cheltuielile neeligibile sunt detaliate în ghidul APIA.",
    "termen": "2026-11-30",
    "url": "https://apia.org.ro/comunicat-de-presa/sesiunea-de-depunere-a-cererilor-de-finantare-pentru-investitiile-in-sectorul-vitivinicol-s-a-prelungit-pana-la-data-de-30-noiembrie-2026/"
-  },
-  {
-   "id": "afir-fm-producere-stocare-publici",
-   "program": "AFIR – Fondul pentru Modernizare",
-   "domeniu": "Nonagricol",
-   "regiune": "Național",
-   "titlu": "Energie solară cu stocare integrată pentru autoconsum – entități publice (500 mil. EUR)",
-   "beneficiari": "Entități publice: UAT-uri (inclusiv comune), instituții publice, ADI",
-   "suma": "Până la 100%; evaluare în ordinea depunerii, până la epuizarea alocării",
-   "descriere": "Apelul din Fondul pentru Modernizare, derulat de AFIR, finanțează capacități solare noi cu stocare integrată pentru autoconsumul entităților publice: echipamente noi, construcții aferente, montaj și punere în funcțiune și pompe de căldură. Pot aplica UAT-uri, instituții publice, spitale publice, culte, universități de stat, ADI-uri și parteneriate între acestea, cu activități economice de cel mult 20% din capacitatea anuală. Stocarea trebuie să acopere 2–4 ore din puterea instalată, fără baterii pe bază de plumb, NiCd sau NiMH, injecția în rețea este plafonată la 400 kW pe locație, iar producția anuală nu poate depăși 110% din consum. Nu se finanțează înlocuirea capacităților solare existente, proiectele doar de stocare sau pompe de căldură, consolidarea acoperișurilor și echipamentele second-hand. Finanțarea este de 100%, maximum 10 milioane de euro pe beneficiar și 900.000 de euro/MW, respectiv 1.100.000 de euro/MW cu pompe de căldură. Se aplică principiul „primul venit, primul evaluat”, până la epuizarea celor 500 de milioane de euro, cu termen 20 noiembrie 2026. Potrivit presei, cele două apeluri pentru entități publice au atras 2.238 de cereri, de circa 702,8 milioane de euro.",
-   "termen": "2026-11-20",
-   "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-producere-si-stocare-energie-regenerabila-beneficiari-publici/"
-  },
-  {
-   "id": "afir-fm-stocare-publici",
-   "program": "AFIR – Fondul pentru Modernizare",
-   "domeniu": "Nonagricol",
-   "regiune": "Național",
-   "titlu": "Capacități noi de stocare a energiei regenerabile – entități publice (150 mil. EUR)",
-   "beneficiari": "Entități publice: UAT-uri (inclusiv comune), instituții publice, ADI",
-   "suma": "Până la 100%; evaluare în ordinea depunerii, până la epuizarea alocării",
-   "descriere": "Apelul din Fondul pentru Modernizare, derulat de AFIR, finanțează capacități noi de stocare a energiei electrice în spatele contorului, conectate la o instalație existentă de producere din surse regenerabile, pentru autoconsum. Sunt eligibile echipamentele noi de stocare, construcțiile aferente, montajul și punerea în funcțiune. Pot aplica UAT-uri, instituții publice, spitale publice, culte, universități de stat, ADI-uri și parteneriate între acestea, cu activități economice de cel mult 20% din capacitatea anuală. Stocarea trebuie dimensionată pentru 2–4 ore la puterea centralei existente, cu sistem de management energetic și contorizare separată. Nu se finanțează bateriile pe bază de plumb, NiCd sau NiMH, înlocuirea stocării vechi, proiectele combinate producție-stocare și stocarea energiei preluate exclusiv din rețea. Sprijinul este de 100%, maximum 10 milioane de euro pe beneficiar și 200.000 de euro fără TVA pe MWh instalat. Se aplică principiul „primul venit, primul evaluat” până la epuizarea celor 150 de milioane de euro, cu termen 20 noiembrie 2026. Potrivit presei, cele două apeluri pentru entități publice au atras 2.238 de cereri, de circa 702,8 milioane de euro.",
-   "termen": "2026-11-20",
-   "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-stocare-energie-regenerabila-beneficiari-publici/"
   },
   {
    "id": "leader-dr36-gal",
