@@ -1,19 +1,7 @@
 {
- "actualizat": "2026-11-23T10:42:21+02:00",
+ "actualizat": "2026-11-24T10:42:31+02:00",
  "sursa": "Centrul de Dezvoltare SMART",
  "apeluri": [
-  {
-   "id": "afir-dr12-zootehnic",
-   "program": "AFIR – PS PAC 2023-2027",
-   "domeniu": "Agricol",
-   "regiune": "Național",
-   "titlu": "DR-12 – Consolidarea exploatațiilor tinerilor fermieri instalați și a fermierilor de până la 45 de ani – componenta Sector zootehnic (84,8 mil. EUR)",
-   "beneficiari": "Șefi de exploatație de până la 40 de ani, foști beneficiari sM 6.1 (PNDR) și fermieri de până la 45 de ani",
-   "suma": "Până la 200.000 EUR/proiect; 80% (tineri până la 40 de ani) sau 65%",
-   "descriere": "Componenta Sector zootehnic a intervenției DR-12 finanțează proiectele în care peste 50% din valoarea eligibilă vizează ferma zootehnică: construcții noi sau modernizate cu dotări și utilități, utilaje pentru producerea și distribuirea furajelor, unități de condiționare și depozitare, iar ca componente secundare procesarea la fermă, comercializarea, irigațiile și energia regenerabilă pentru consum propriu. Pot aplica fermierii instalați, nu persoane fizice, de cel mult 45 de ani sau care au finalizat planul de afaceri sM 6.1, șefi de exploatație cu minimum 8 clase și competențe agricole, cu o fermă de minimum 12.000 euro SO. Nu se finanțează animale, terenuri, clădiri, cap tractor, ATV sau locuința. Sprijinul ajunge la 200.000 euro pe proiect, cu intensitate de 80% pentru tinerii fermieri de până la 40 de ani și 65% pentru ceilalți. Punctajul minim este de 45 de puncte, criteriile vizând calificarea, cooperativele, proprietatea, agricultura de precizie și managementul riscului. Alocarea este de circa 84,8 milioane euro, iar componenta Alte sectoare s-a închis pe 11.11.2026 prin epuizarea fondurilor.",
-   "termen": "2026-12-02",
-   "url": "https://www.afir.ro/domenii-de-interventie/detalii-si-anexe-dr-12/"
-  },
   {
    "id": "apia-is-v-02",
    "program": "APIA – Sector vitivinicol",
